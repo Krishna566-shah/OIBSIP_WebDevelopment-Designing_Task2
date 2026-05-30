@@ -1,0 +1,140 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.sidebar h3 { font-size: 2rem; }
+.sidebar p { font-size: 1.1rem; color: var(--grey); line-height: 1.5; }
+
+.tabs { display: flex; flex-direction: column; gap: 1rem; }
+.tabs .tab {
+    border: 2px solid var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    transition: all linear 0.3s;
+}
+
+.tabs .tab:hover { background: var(--secondary-color); color: var(--white); }
+
+.tab-content-wrapper { width: 100%; }
+.tab-content {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tab-content h2 { font-size: 2rem; }
+.tab-content h2 span { color: var(--yellow); }
+.tab-content p { color: var(--grey); line-height: 1.6; }
+
+/* CSS Tabs Logic */
+#tab-exp:checked ~ .sidebar .tabs .lbl-exp,
+#tab-edu:checked ~ .sidebar .tabs .lbl-edu,
+#tab-skills:checked ~ .sidebar .tabs .lbl-skills,
+#tab-aboutme:checked ~ .sidebar .tabs .lbl-aboutme {
+    background: var(--yellow);
+    color: var(--primary-color);
+    border-color: var(--yellow);
+}
+
+#tab-exp:checked ~ .tab-content-wrapper .content-exp,
+#tab-edu:checked ~ .tab-content-wrapper .content-edu,
+#tab-skills:checked ~ .tab-content-wrapper .content-skills,
+#tab-aboutme:checked ~ .tab-content-wrapper .content-aboutme {
+    display: flex;
+}
+
+/* Experience / Education Box */
+.experience-list { display: flex; flex-direction: column; gap: 1.5rem; }
+.experience-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: var(--secondary-color);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.experience-box:hover { border-color: var(--yellow); transform: translateY(-5px); }
+.experience-box h4 { color: var(--yellow); font-size: 1.1rem; }
+.experience-box h3 { font-size: 1.4rem; }
+.company-name { display: flex; align-items: center; gap: 10px; color: var(--grey); font-weight: bold; margin-bottom: 0.5rem;}
+.company-name span { width: 10px; height: 10px; background: var(--yellow); border-radius: 50%; display: inline-block; }
+
+/* Skills Grid with Icons */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.skill-item {
+    background: var(--secondary-color);
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill-item:hover {
+    border-color: var(--yellow);
+    transform: translateY(-5px);
+    background: var(--primary-color);
+    box-shadow: 0 5px 15px rgba(241, 198, 104, 0.2);
+}
+
+.skill-item i {
+    font-size: 3.5rem;
+    color: var(--yellow);
+    transition: all 0.3s ease;
+}
+
+.skill-item p { font-size: 1rem; font-weight: 600; color: var(--white); margin: 0; }
+.skill-item:hover i { transform: scale(1.1); }
+
+/* About Info */
+.about-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+.info-item { font-size: 1.1rem; border-bottom: 1px solid var(--disabled-color); padding-bottom: 0.5rem; }
+.info-item:last-child { border-bottom: none; padding-bottom: 0; }
+.info-item span { color: var(--yellow); font-weight: bold; margin-right: 10px; }
+
+@media screen and (min-width: 768px) {
+    #about { flex-direction: row; align-items: flex-start; }
+    .sidebar { text-align: left; width: 30%; position: sticky; top: 100px; }
+    .tab-content-wrapper { width: 70%; }
+}

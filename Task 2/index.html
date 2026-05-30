@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Krishna Shah</title>
+    <link rel="shortcut icon" href="assets/Brand_Logo.png" type="image/x-icon">
+    
+    <!-- CSS Files Linked -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+</head>
+
+<body>
+    <div class='main-container'>
+        <header>
+            <div class='brand-info'>
+                <img src="assets/Brand_Logo.png" alt="Krishna Shah" onerror="this.src='https://via.placeholder.com/70x70/f1c668/131313?text=KS'">
+                <h2>Portfolio</h2>
+            </div>
+            <div class='menu-area'>
+                <input type="checkbox" id="menu-toggle" hidden />
+                <label for="menu-toggle" class="menu-icon"><i class="bx bx-menu"></i></label>
+                <label for="menu-toggle" id="overlay"></label>
+                
+                <nav>
+                    <a href="#home" style="--i:1" class="navlink">Home</a>
+                    <a href="#about" style="--i:2" class="navlink">About</a>
+                    <a href="#projects" style="--i:3" class="navlink">Projects</a>
+                    <a href="#contact" style="--i:4" class="navlink">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HOME SECTION -->
+        <section id="home" class="content">
+            <div class="details">
+                <h2><span>Krishna</span> Shah</h2>
+                <h3>I'm
+                    <span class="typing">
+                        <span class="typing-text" style="--t:1">a Web Developer</span>
+                        <span class="typing-text" style="--t:2">a Designer</span>
+                        <span class="typing-text" style="--t:3">a Programmer</span>
+                    </span>
+                </h3>
+                <p>
+                    I am a passionate Web Developer and UI/UX enthusiast with a strong interest in creating modern and responsive websites. I enjoy designing clean and user-friendly interfaces that provide a better user experience. I love learning new technologies and continuously improving my skills to turn ideas into visually appealing digital experiences.
+                </p>
+                <div class="bottom">
+                    <a href="assets/Resume-Og.pdf" download>
+                        <button>Download Resume</button>
+                    </a>
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/krishna-shah-69b91031b/" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="https://github.com/Krishna566-shah" target="_blank"><i class="ph ph-github-logo"></i></a>
+                        <a href="https://www.instagram.com/s.krishna.__019?igsh=MWE4ZmFubm5kdjJyZA%3D%3D&utm_-source=qr" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="https://www.facebook.com/share/1AwW3TBtPc/?mibextid=wwXlfr" target="_blank"><i class="ph ph-facebook-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="assets/Profile_img.jpg" alt="Krishna Shah" title="Profile Picture" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400/565554/f1c668?text=Profile+Image'">
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="content">
+            <input type="radio" name="about-tabs" id="tab-exp" checked hidden>
+            <input type="radio" name="about-tabs" id="tab-edu" hidden>
+            <input type="radio" name="about-tabs" id="tab-skills" hidden>
+            <input type="radio" name="about-tabs" id="tab-aboutme" hidden>
+
+            <div class="sidebar">
+                <h3>Why Hire Me?</h3>
+                <p>I am dedicated, continuously learning, and highly motivated to bring creative solutions to life. I blend design with technical functionality seamlessly.</p>
+                <div class="tabs">
+                    <label for="tab-exp" class="tab lbl-exp">Experience</label>
+                    <label for="tab-edu" class="tab lbl-edu">Education</label>
+                    <label for="tab-skills" class="tab lbl-skills">Skills</label>
+                    <label for="tab-aboutme" class="tab lbl-aboutme">About Me</label>
+                </div>
+            </div>
+
+            <div class="tab-content-wrapper">
+                <!-- Experience -->
+                <aside id="experience" class="tab-content content-exp">
+                    <h2>My <span>Experience</span></h2>
+                    <p>My professional journey working with amazing teams to build digital products.</p>
+                    <div class="experience-list">
+                        <div class="experience-box">
+                            <h4>2026 - Present</h4>
+                            <h3>Web Developer and Designer Intern</h3>
+                            <div class="company-name"><span></span> Oasis Infobyte</div>
+                            <p>Developed responsive landing pages using HTML and CSS
+                            Built portfolio websites with mobile-friendly UI design.</p>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Education -->
+                <aside id="education" class="tab-content content-edu">
+                    <h2>My <span>Education</span></h2>
+                    <p>My academic background and qualifications.</p>
+                    <div class="experience-list">
+                        <div class="experience-box">
+                            <h4>2024 - 2028(Expected)</h4>
+                            <h3>Bachelor of Technology (B.Tech) in Computer Science & Engineering</h3>
+                            <div class="company-name"><span></span>Charotar University of Science and Technology (DEPSTAR-CHARUSAT)- Gujarat</div>
+                            <p>Currently pursuing B.Tech with interest in web development, UI/UX design, and software development</p>
+                        </div>
+                        <div class="experience-box">
+                            <h4>2022 - 2024</h4>
+                            <h3>Higher Secondary Education</h3>
+                            <div class="company-name"><span></span>Fellowship International School - Gujarat</div>
+                            <p>Completed higher secondary education with a focus on Mathematics and Computer Science.</p>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Skills -->
+                <aside id="skills" class="tab-content content-skills">
+                    <h2>My <span> Technical Skills</span></h2>
+                    <p>Technologies and tools I use to build modern, responsive websites.</p>
+                    <div class="skills-grid">
+                        <div class="skill-item"><i class="ph ph-file-html"></i><p>HTML5</p></div>
+                        <div class="skill-item"><i class="ph ph-file-css"></i><p>CSS3</p></div>
+                        <div class="skill-item"><i class="ph ph-file-js"></i><p>JavaScript</p></div>
+                        <div class="skill-item"><i class="ph ph-bootstrap-logo"></i><p>Bootstrap</p></div>
+                        <div class="skill-item"><i class="ph ph-file-c"></i><p>C LANGUAGE</p></div>
+                        <div class="skill-item"><i class="ph ph-file-cpp"></i><p>C++ LANGUAGE</p></div>
+                        <div class="skill-item"><i class="ph ph-file-py"></i><p>Python</p></div>
+                        <div class="skill-item"><i class="ph ph-coffee"></i><p>Java</p></div>
+                        <div class="skill-item"><i class="ph ph-git-branch"></i><p>Git</p></div>
+                        <div class="skill-item"><i class="ph ph-github-logo"></i><p>GitHub</p></div>
+                        <div class="skill-item"><i class="ph ph-figma-logo"></i><p>Figma</p></div>
+                    </div>
+
+                    <h2>My <span> Non-Technical Skills</span></h2>
+                    <p>Soft skills and personal qualities that complement my technical abilities.</p>
+                    <div class="skills-grid">
+                        <div class="skill-item"><i class="ph ph-user-circle-gear"></i><p>Adaptability</p></div>
+                        <div class="skill-item"><i class="ph ph-heart"></i><p>Emotional Intelligence</p></div>
+                        <div class="skill-item"><i class="ph ph-chat"></i><p>Communication</p></div>
+                        <div class="skill-item"><i class="ph ph-crown"></i><p>Leadership</p></div>
+                        <div class="skill-item"><i class="ph ph-brain"></i><p>Critical Thinking</p></div>
+                        <div class="skill-item"><i class="ph ph-clipboard"></i><p>Good at Problem Solving</p></div>
+                        <div class="skill-item"><i class="ph ph-users"></i><p>Collaborative at teamwork</p></div>
+                        <div class="skill-item"><i class="ph ph-clock"></i><p>Time Management</p></div>
+                    </div>
+                </aside>
+
+                <!-- About Me -->
+                <aside id="about-me" class="tab-content content-aboutme">
+                    <h2>About <span>Me</span></h2>
+                    <p>A little bit more about who I am outside of my technical skills.</p>
+                    <div class="about-info">
+                        <div class="info-item"><span>Name:</span> Krishna Dineshkumar Shah</div>
+                        <div class="info-item"><span>Experience:</span> Fresher (No Experience)</div>
+                        <div class="info-item"><span>Nationality:</span> Indian</div>
+                        <div class="info-item"><span>Freelance:</span> Available</div>
+                        <div class="info-item"><span>Languages:</span> English, Hindi, Gujarati</div>
+                        <div class="info-item"><span>Email:</span>shah.19krishna@gmail.com</div>
+                        <div class="info-item"><span>Phone:</span> +91 8866174972</div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="content">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/Project - 1.png" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Pack-N-Go - A travel booking platform</h3>
+                        <p>A travel booking frontend built with HTML ,CSS and Javascript featuring smooth animations.</p>
+                        <a href="#" class="btn"><i class="bx bx-link-external"></i> Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/Project - 2.png" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Portfolio Template</h3>
+                        <p>A customizable, dark-themed personal portfolio template utilizing modern CSS Grid and Flexbox.</p>
+                        <a href="#" class="btn"><i class="bx bx-link-external"></i> Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/Project - 3.png" alt="Project 3">
+                    <div class="project-info">
+                        <h3>RentVerse - A property rental and tenant managementplatform</h3>
+                        <p>A modern, responsive property rental website built with HTML, CSS, and JavaScript.</p>
+                        <a href="#" class="btn"><i class="bx bx-link-external"></i> Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/Project - 4.png" alt="Project 4">
+                    <div class="project-info">
+                        <h3>TempLINK - A Temperature Converter</h3>
+                        <p>A modern, responsive temperature conversion website built with HTML, CSS, and JavaScript.</p>
+                        <a href="#" class="btn"><i class="bx bx-link-external"></i> Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/Project - 5.png" alt="Project 5">
+                    <div class="project-info">
+                        <h3>NavOils - A Groundnut Oil Trading Platform</h3>
+                        <p>A modern landing page for a groundnut oil trading business built with HTML and CSS.</p>
+                        <a href="#" class="btn"><i class="bx bx-link-external"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="content">
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <div class="contact-container">
+                <div class="contact-left">
+                    <h3>Let's work together!</h3>
+                    <p>Feel free to reach out for collaborations, freelance projects, or just to say hi.</p>
+                    <div class="contact-detail">
+                        <i class="bx bx-envelope"></i>
+                        <span>shah.19krishna@gmail.com</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="bx bx-phone"></i>
+                        <span>+91 8866174972</span>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="bx bx-map"></i>
+                        <span>Chikhli , Gujarat, India</span>
+                    </div>
+                </div>
+                
+                <!-- Emailto Form for Realtime Native Emailing -->
+                <form class="contact-form" action="mailto:shah.19krishna@gmail.com" method="POST" enctype="text/plain">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <input type="text" name="Subject" placeholder="Subject">
+                    <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send via Email App</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
