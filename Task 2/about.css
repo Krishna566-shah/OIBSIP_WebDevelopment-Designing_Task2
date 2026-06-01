@@ -46,7 +46,6 @@
 .tab-content h2 span { color: var(--yellow); }
 .tab-content p { color: var(--grey); line-height: 1.6; }
 
-/* CSS Tabs Logic */
 #tab-exp:checked ~ .sidebar .tabs .lbl-exp,
 #tab-edu:checked ~ .sidebar .tabs .lbl-edu,
 #tab-skills:checked ~ .sidebar .tabs .lbl-skills,
@@ -63,7 +62,6 @@
     display: flex;
 }
 
-/* Experience / Education Box */
 .experience-list { display: flex; flex-direction: column; gap: 1.5rem; }
 .experience-box {
     display: flex;
@@ -82,7 +80,7 @@
 .company-name { display: flex; align-items: center; gap: 10px; color: var(--grey); font-weight: bold; margin-bottom: 0.5rem;}
 .company-name span { width: 10px; height: 10px; background: var(--yellow); border-radius: 50%; display: inline-block; }
 
-/* Skills Grid with Icons */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -119,8 +117,7 @@
 
 .skill-item p { font-size: 1rem; font-weight: 600; color: var(--white); margin: 0; }
 .skill-item:hover i { transform: scale(1.1); }
-
-/* About Info */
+        
 .about-info {
     display: flex;
     flex-direction: column;
